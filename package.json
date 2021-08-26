@@ -33,6 +33,6 @@
     "sass": "^1.38.1",
     "snyk": "^1.521.0",
     "uswds": "^2.12.1",
-    "uswds-gulp": "uswds/uswds-gulp"
+    "uswds-gulp": "git+https://github.com/uswds/uswds-gulp.git"
   }
 }
