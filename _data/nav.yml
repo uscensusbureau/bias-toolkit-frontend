@@ -5,8 +5,8 @@ primary:
         href: /resources
       - text: Get Started
         href: /resources/get-started
-      - text: Mitigating Bias in Job Postings
-        href: /resources/mitigating-bias-in-job-postings
+      - text: Evaluating Language Choice in Job Postings
+        href: /resources/language-choice-in-job-postings
       - text: Model Card Generator
         href: /resources/model-card-generator
   - text: About
@@ -14,7 +14,7 @@ primary:
 
 footer:
   title: Helpful Links
-  links: 
+  links:
     - text: Privacy Policy
       href: 'https://www.census.gov/about/policies/privacy.html'
       isExternal: true

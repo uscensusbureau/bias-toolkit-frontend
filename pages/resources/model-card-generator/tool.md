@@ -1,7 +1,7 @@
 ---
 layout: tool
 display-title: Model Card Generator
-details: Acknowledging bias through transparency.
+details: Improving data accuracy through transparency.
 
 permalink: /resources/model-card-generator/tool/
 resource:

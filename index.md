@@ -7,8 +7,8 @@ permalink: /
 
 hero:
   pre-header: Learn &#183; Build &#183; Connect
-  title: 'Introducing the Bias Toolkit'
-  subtitle: From fundamentals to advanced topics, this toolkit helps teams in government understand and mitigate bias in their data and algorithms.
+  title: 'Introducing the AI Toolkit'
+  subtitle: From fundamentals to advanced topics, this toolkit helps teams in government understand and solve for the unique challenges presented by AI.
   buttons:  # controls the 3 buttons in the top, hero section
     - text: "Get Started"
       href: '/resources/get-started'
@@ -20,7 +20,7 @@ hero:
 
 second-section:
   title: Get in Touch
-  subtitle: Do you have questions about bias in federal data or the tools in this toolkit? Do you have a case study that you’d like to highlight? Or feedback for how this toolkit might better meet your needs? We’d love to hear from you. Email us at [inquiries@xd.gov](mailto:inquiries@xd.gov).
+  subtitle: Do you have questions about using AI in the federal government? Do you have a case study that you’d like to highlight? Or feedback for how this toolkit might better meet your needs? We’d love to hear from you. Email us at [inquiries@xd.gov](mailto:inquiries@xd.gov).
   button:
     text: Email Us
     href: mailto:inquiries@xd.gov
