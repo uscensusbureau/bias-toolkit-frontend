@@ -15,8 +15,8 @@ function startDownload(event) {
 	const anchor = document.createElement("a");
 	const formData = collectFormData();
 	// add origin note and link
-	const projectLink = 'https://bias/xd.gov/resources/model-card-generator/tool/';
-	const originNote = `This model card was generated with the Bias Toolkit Model Card Generator version ${projectVersion}. To learn more, visit ${projectLink}.`;
+	const projectLink = 'https://ai-toolkit.xd.gov/resources/model-card-generator/tool/';
+	const originNote = `This model card was generated with the AI Toolkit Model Card Generator version ${projectVersion}. To learn more, visit ${projectLink}.`;
 	formData.push([originNote]);
 
 	const modelCardData = formData.join("\r\n");
