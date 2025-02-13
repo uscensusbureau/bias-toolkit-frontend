@@ -9,6 +9,8 @@ primary:
         href: /resources/language-choice-in-job-postings
       - text: Model Card Generator
         href: /resources/model-card-generator
+      - text: Privacy-Preserving Model Auditing
+        href: /resources/privacy-preserving-model-auditing
   - text: About
     href: /about
 
