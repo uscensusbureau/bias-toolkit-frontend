@@ -1,7 +1,7 @@
 ---
 layout: base
 
-# This is the layout for the /resources page. 
+# This is the layout for the /resources page.
 # Displays a featured resource card and a row of three other "popular" cards below it
 ---
 <section class="margin-bottom-6 resources-hero">
@@ -23,7 +23,7 @@ layout: base
   <section>
     <h2 class="site-heading site-heading--small">{{ page.card-row-title | default: "All Resources" }}</h2>
     <ul class="usa-card-group">
-      {% assign nonFeatured = site.resources | where_exp: "tool", "tool.featured == nil or tool.featured == false" %}
+      {% assign nonFeatured = site.resources | where_exp: "tool", "tool.featured == false" %}
       {% for tool in nonFeatured %}
         <li class="tablet:grid-col-4 usa-card site-card">
           {% include resource-card__container.html data=tool %}

@@ -7,6 +7,9 @@ agency-partners:
     href: https://www.dol.gov/
 
 github: https://github.com/USDepartmentofLabor/ableist-language-detector
+
+# whether or not the card is "featured" on the /resources page or homepage
+featured: false
 order: 4
 tags:
   - website

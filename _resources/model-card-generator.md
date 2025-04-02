@@ -6,6 +6,9 @@ agency-partners:
   - text: U.S. Census Bureau
     href: https://www.census.gov/
 
+# whether or not the card is "featured" on the /resources page or homepage
+featured: false
+
 github: https://github.com/XDgov/model-card-generator
 order: 2
 tags:

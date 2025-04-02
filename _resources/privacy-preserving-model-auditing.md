@@ -7,6 +7,8 @@ agency-partners:
     href: https://www.census.gov/
 
 github: https://github.com/XDgov/privacy-preserving-model-auditing-demo
+# whether or not the card is "featured" on the /resources page or homepage
+featured: false
 order: 2
 tags:
   - tool
