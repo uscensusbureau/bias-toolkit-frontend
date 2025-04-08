@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/resources/evaluating-language-choice-in-job-postings/</loc>
+<lastmod>2025-04-08T21:07:49+00:00</lastmod>
+</url>
+<url>
+<loc>/resources/get-started/</loc>
+<lastmod>2025-04-08T21:07:49+00:00</lastmod>
+</url>
+<url>
+<loc>/resources/model-card-generator/</loc>
+<lastmod>2025-04-08T21:07:49+00:00</lastmod>
+</url>
+<url>
+<loc>/resources/privacy-preserving-model-auditing/</loc>
+<lastmod>2025-04-08T21:07:49+00:00</lastmod>
+</url>
+<url>
+<loc>/about/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/resources/</loc>
+</url>
+<url>
+<loc>/resources/model-card-generator/tool/</loc>
+</url>
+</urlset>
