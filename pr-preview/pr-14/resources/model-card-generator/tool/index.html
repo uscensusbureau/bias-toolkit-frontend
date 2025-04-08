@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<!-- * * * * * ======================= -->
+<!-- * * * * * ======================= -->
+<!-- * * * * * ======================= -->
+<!-- * * * * * ======================= -->
+<!-- ================================= -->
+<!-- ================================= -->
+<!-- ================================= -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>AI Toolkit</title>
+  
+<link rel="shortcut icon" type="image/ico"
+  href="/assets/img/favicons/favicon.ico">
+
+<link rel="icon" type="image/png"
+  sizes="16x16"
+  href="/assets/img/favicons/favicon-16x16.png">
+
+<link rel="icon" type="image/png"
+  sizes="32x32"
+  href="/assets/img/favicons/favicon-32x32.png">
+
+<link rel="icon" type="image/png"
+  sizes="192x192"
+  href="/assets/img/favicons/android-chrome-192x192.png">
+
+<link rel="icon" type="image/png"
+  sizes="512x512"
+  href="/assets/img/favicons/android-chrome-512x512.png">
+
+<link rel="apple-touch-icon" type=""
+  sizes="180x180"
+  href="/assets/img/favicons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/assets/uswds/css/styles.css">
+  <link rel="canonical" href="/resources/model-card-generator/tool/">
+  <link rel="preload" href="/assets/uswds/js/uswds.min.js" as="script">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYG1W60QS2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HYG1W60QS2');
+  </script>
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=CEN"></script>
+</head>
+
+
+<body class="">
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<section class="usa-banner" aria-label="Official government website">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img
+            class="usa-banner__header-flag"
+            src="/assets/uswds/img/us_flag_small.png"
+            alt="U.S. flag"
+          />
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">
+            An official website of the United States government
+          </p>
+          <p class="usa-banner__header-action" aria-hidden="true">
+            Here’s how you know
+          </p>
+        </div>
+        <button
+          class="usa-accordion__button usa-banner__button"
+          aria-expanded="false"
+          aria-controls="gov-banner"
+        >
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img
+            class="usa-banner__icon usa-media-block__img"
+            src="/assets/uswds/img/icon-dot-gov.svg"
+            role="img"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Official websites use .gov</strong>
+              <br />
+              A <strong>.gov</strong> website belongs to an official government
+              organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img
+            class="usa-banner__icon usa-media-block__img"
+            src="/assets/uswds/img/icon-https.svg"
+            role="img"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Secure .gov websites use HTTPS</strong>
+              <br />
+              A <strong>lock</strong> (
+              <span class="icon-lock"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="52"
+                  height="64"
+                  viewBox="0 0 52 64"
+                  class="usa-banner__lock-image"
+                  role="img"
+                  aria-labelledby="banner-lock-title banner-lock-description"
+                >
+                  <title id="banner-lock-title">Lock</title>
+                  <desc id="banner-lock-description">A locked padlock</desc>
+                  <path
+                    fill="#000000"
+                    fill-rule="evenodd"
+                    d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
+                  /></svg
+              ></span>
+              ) or <strong>https://</strong> means you’ve safely connected to
+              the .gov website. Share sensitive information only on official,
+              secure websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+
+
+
+
+<header class="usa-header usa-header--basic">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="xd-logo">
+        <em class="usa-logo__text">
+          <a href="/" title="AI Toolkit">
+            AI Toolkit
+            <span class="site-version">Beta</span>
+          </a>
+        </em>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <button class="usa-nav__close">
+        <img src="/assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        
+          
+          
+          
+          <li class="usa-nav__primary-item">
+            
+              
+              <button
+                class="usa-accordion__button usa-nav__link "
+                aria-expanded="false"
+                aria-controls="basic-nav-resources"
+              >
+                <span>Resources</span>
+              </button>
+              <ul id="basic-nav-resources" class="usa-nav__submenu">
+                
+                  <li class="usa-nav__submenu-item">
+                    <a href="/resources">All Resources</a>
+                  </li>
+                
+                  <li class="usa-nav__submenu-item">
+                    <a href="/resources/get-started">Get Started</a>
+                  </li>
+                
+                  <li class="usa-nav__submenu-item">
+                    <a href="/resources/language-choice-in-job-postings">Evaluating Language Choice in Job Postings</a>
+                  </li>
+                
+                  <li class="usa-nav__submenu-item">
+                    <a href="/resources/model-card-generator">Model Card Generator</a>
+                  </li>
+                
+                  <li class="usa-nav__submenu-item">
+                    <a href="/resources/privacy-preserving-model-auditing">Privacy-Preserving Model Auditing</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          
+          
+          
+          <li class="usa-nav__primary-item">
+            
+              <li class="usa-nav__primary-item">
+                <a href="/about" class="usa-nav__link ">
+                  <span>About</span>
+                </a>
+              </li>
+            
+          </li>
+        
+      </ul>
+
+      
+    </nav>
+  </div>
+</header>
+  <main id="main-content" class="site-prose">
+    <div class="grid-container margin-y-10">
+  <article>
+  
+    <span class="tool-version">Version 0.2</span>
+  
+  <header>
+    <h1 class="font-sans-3xl resource-heading">Model Card Generator</h1>
+  </header>
+
+  <p>
+	This tool can be used to create a <a href="/resources/model-card-generator/">Model Card</a>: a way to share information about a model’s intent, data, architecture, and performance. Use the form below to generate a markdown (*.md) file version of a model card.
+</p>
+<p>
+  The data you enter here is not saved or sent to a server. This is an entirely client-side feature.
+</p>
+<p>
+  <span class="note-text">Note</span>: A red asterisk (<span class="required-asterisk">*</span>) indicates a required field.
+</p>
+
+<form accept-charset="UTF-8" enctype="multipart/form-data" class="usa-form model-card-form" id="model-card-form">
+  <h3>Accountability</h3>
+  <div>
+    <label class="usa-label" for="name">Model name<span class="required-asterisk">*</span></label>
+    <input class="usa-input" type="text" id="name" data-md-title="ModelName" data-md-type="h1" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="owners">
+      Point of contact(s)<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="owners" data-md-title="Collaborators" data-md-type="ul" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="agencies">
+      Agencies/Affiliations<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="agencies" data-md-title="Agency" data-md-type="ul" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="acquisition">
+      Model acquisition/development method<span class="required-asterisk">*</span>
+    </label>
+    <select name="acquisition" class="usa-select" id="acquisition" data-md-title="Ownership" data-md-type="ul" required="">
+      <option value="">- Select -</option>
+      <option value="internally-built">Internally-built</option>
+      <option value="internally-built">Off-the-shelf</option>
+      <option value="internally-built">Bespoke</option>
+    </select>
+  </div>
+  <h3>Anticipated Use</h3>
+  <div>
+    <label class="usa-label" for="user-agencies" id="user-agencies-label">
+      Division(s) using the model<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="user-agencies" data-md-title="label" data-md-type="ul" data-md-heading="Anticipated Use" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="applications" id="applications-label">
+      Intended application(s)<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="applications" data-md-title="label" data-md-type="ul" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="user-stakeholders" id="user-stakeholders-label">
+      Intended stakeholder(s)<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="user-stakeholders" data-md-title="label" data-md-type="ul" required="" />
+  </div>
+  <h3>Model Information &amp; Architecture</h3>
+  <div>
+    <label class="usa-label" for="model-version" id="model-version-label">
+      Current model version<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="model-version" data-md-title="label" data-md-type="ul" data-md-heading="Model Information" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="release-date" id="release-date-label">
+      Version release date<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="date" id="release-date" data-md-title="label" data-md-type="ul" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="changes" id="changes-label">
+      Changes made since last release (if any)<span class="required-asterisk">*</span>
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="changes" data-md-title="label" data-md-type="ul" required=""></textarea>
+  </div>
+  <div>
+    <label class="usa-label" for="license" id="license-label">
+      License for use<span class="required-asterisk">*</span>
+    </label>
+    <select name="acquisition" class="usa-select" id="license" data-md-title="Ownership" data-md-type="ul" required="">
+      <option value="">- Select -</option>
+      <option value="apache-2.0">Apache license 2.0</option>
+      <option value="mit">MIT</option>
+      <option value="gpl-3.0">GNU General Public License v3.0</option>
+      <option value="mpl-2.0">Mozilla Public License 2.0</option>
+      <option value="other">Other</option>
+      <option value="none">None</option>
+      <option value="unknown">Unknown</option>
+    </select>
+  </div>
+  <div>
+    <label class="usa-label" for="model-type" id="model-type-label">
+      Type of Model (Classification, Regression, Object Detection, etc.)<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="model-type" data-md-title="label" data-md-type="ul" data-md-heading="Model Architecture" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="algorithm" id="algorithm-label">
+      Type of algorithm(s) used<span class="required-asterisk">*</span>
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="algorithm" data-md-title="label" data-md-type="ul" required=""></textarea>
+  </div>
+  <h3>Dataset &amp; Performance</h3>
+  <div>
+    <label class="usa-label" for="data-source" id="data-source-label">
+      Source(s) of the training data<span class="required-asterisk">*</span>
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="data-source" data-md-title="label" data-md-type="ul" required=""></textarea>
+  </div>
+  <div>
+    <label class="usa-label" for="data-collection" id="data-collection-label">
+      Data collection/generation method<span class="required-asterisk">*</span>
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="data-collection" data-md-title="label" data-md-type="ul" required=""></textarea>
+  </div>
+  <div>
+    <label class="usa-label" for="data-variables" id="data-variables-label">
+      Number of variables in the dataset<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="data-variables" data-md-title="label" data-md-type="ul" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="entry-count" id="entry-count-label">
+      Number of entries in the dataset<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="entry-count" data-md-title="label" data-md-type="ul" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="validation-percent" id="validation-percent-label">
+      Percent of data chosen as the training, testing, and validation sets<span class="required-asterisk">*</span>
+    </label>
+    <input class="usa-input" type="text" id="validation-percent" data-md-title="label" data-md-type="ul" required="" />
+  </div>
+  <div>
+    <label class="usa-label" for="metrics" id="metrics-label">
+      Metrics used to rate model performance<span class="required-asterisk">*</span>
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="metrics" data-md-title="label" data-md-type="ul" required=""></textarea>
+  </div>
+  <div>
+    <label class="usa-label" for="performance-limit" id="performance-limit-label">
+      Factors that limit the model's performance (examples: limited dataset, number of nulls/NAs) (if any)?<span class="required-asterisk">*</span>
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="performance-limit" data-md-title="label" data-md-type="ul" required=""></textarea>
+  </div>
+  <h3 data-md-title="Bias" data-md-type="h2">Bias Identification &amp; Mitigation</h3>
+  <div>
+    <label class="usa-label" for="individual-population-information" id="individual-population-information-label">
+      Inclusion of information related to individuals or human populations in the training/testing/validation datasets - Yes/No, <br /> if "yes" include a description of demographic features
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="individual-population-information" data-md-title="label" data-md-type="ul"></textarea>
+  </div>
+  <div>
+    <label class="usa-label" for="minimize-bias" id="minimize-bias-label">
+      Methods used to minimize bias from human judgement
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="minimize-bias" data-md-title="label" data-md-type="ul"></textarea>
+  </div>
+  <div>
+    <label class="usa-label" for="potential-bias" id="potential-bias-label">
+      Potential biases found in the training dataset from collection methods, sample size, representation, etc.
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="potential-bias" data-md-title="label" data-md-type="ul"></textarea>
+  </div>
+  <div>
+    <label class="usa-label" for="bias-eval-tools" id="bias-eval-tools-label">
+      Testing/evaluation performed to look for bias in the workflow of the model
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="bias-eval-tools" data-md-title="label" data-md-type="ul"></textarea>
+  </div>
+  <div>
+    <label class="usa-label" for="explainability-transparency" id="explainability-transparency-label">
+      Degree of model explainability/transparency
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="explainability-transparency" data-md-title="label" data-md-type="ul"></textarea>
+  </div>
+  <h3 data-md-title="Bias" data-md-type="h2">Governance/Compliance</h3>
+  <div>
+    <label class="usa-label" for="compliance" id="compliance-label">
+      Model/dataset compliance with existing laws and regulations (including privacy protection regulations)
+    </label>
+    <textarea class="usa-textarea content-textarea" type="text" id="compliance" data-md-title="label" data-md-type="ul"></textarea>
+  </div>
+</form>
+<p><button type="submit" form="model-card-form" id="form-btn" class="usa-button">Create Model Card Markdown File</button>
+<script src="/javascript/model-card-generator.js"></script></p>
+
+</article>
+</div>
+  </main>
+  
+
+<footer class="usa-footer">
+  <div class="usa-footer__primary-section usa-section--dark">
+    <nav class="usa-footer__nav padding-y-6" aria-label="Footer navigation">
+      <div class="grid-row grid-gap display-flex flex-row">
+        <div class="grid-col-4">
+          <em class="usa-logo__text">
+            <a href="https://www.xd.gov/" title="AI Toolkit" class="text-no-underline display-flex flex-row flex-align-center flex-justify-center" target="_blank">
+              <img src="/assets/img/xd-logo-white.svg" alt="xd.gov logo" class="maxh-8"/>
+              <span>xD</span>
+            </a>
+          </em>
+        </div>
+        <div class="grid-col-8 mobile-lg:grid-col-4 text-center">
+          <em class="usa-logo__text">
+            <a href="https://www.census.gov/" title="US Census Bureau Logo" target="_blank">
+              <img 
+                src="/assets/img/census-logo.png" 
+                alt="United States Census Bureau logo" 
+                class="maxh-8"/>
+            </a>
+          </em>
+        </div>
+        <div class="mobile-lg:grid-col-4 margin-top-2 mobile-lg:margin-top-neg-2">
+          <div class="site--centered">
+            <span>Helpful Links</span>
+            <ul class="usa-list margin-top-1">
+            
+              <li>
+                <a 
+                  class="usa-footer__secondary-link" 
+                  href="https://www.census.gov/about/policies/privacy.html"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+            
+              <li>
+                <a 
+                  class="usa-footer__secondary-link" 
+                  href="https://www.census.gov/about/policies/privacy/privacy-policy.html#accessibility"
+                >
+                  Accessibility
+                </a>
+              </li>
+            
+              <li>
+                <a 
+                  class="usa-footer__secondary-link" 
+                  href="https://github.com/XDgov/bias-toolkit-frontend"
+                >
+                  Github
+                </a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</footer>
+  <script src="/assets/uswds/js/uswds.min.js"></script>
+</body>
+</html>
