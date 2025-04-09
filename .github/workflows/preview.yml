@@ -34,7 +34,8 @@ jobs:
           cache-version: 0 # Increment this number if you need to re-download cached gems
 
       - name: Install and Build
-        run: bundle exec jekyll build --baseurl "PREVIEW_PATH"
+        if: github.event.action != 'closed' # Skip the build if the PR has been closed
+        run: bundle exec jekyll build --baseurl "pr-preview/pr-${{ github.event.number }}"
         env:
           JEKYLL_ENV: preview
 
