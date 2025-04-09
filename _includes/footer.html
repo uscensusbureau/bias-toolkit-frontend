@@ -7,7 +7,7 @@
         <div class="grid-col-4">
           <em class="usa-logo__text">
             <a href="https://www.xd.gov/" title="{{ site.title }}" class="text-no-underline display-flex flex-row flex-align-center flex-justify-center" target="_blank">
-              <img src="{{site.baseurl}}/assets/img/xd-logo-white.svg" alt="xd.gov logo" class="maxh-8"/>
+              <img src="{{ '/assets/img/xd-logo-white.svg' | relative_url }}" alt="xd.gov logo" class="maxh-8"/>
               <span>xD</span>
             </a>
           </em>
@@ -15,9 +15,9 @@
         <div class="grid-col-8 mobile-lg:grid-col-4 text-center">
           <em class="usa-logo__text">
             <a href="https://www.census.gov/" title="US Census Bureau Logo" target="_blank">
-              <img 
-                src="{{site.baseurl}}/assets/img/census-logo.png" 
-                alt="United States Census Bureau logo" 
+              <img
+                src="{{ '/assets/img/census-logo.png' | relative_url }}"
+                alt="United States Census Bureau logo"
                 class="maxh-8"/>
             </a>
           </em>
@@ -28,8 +28,8 @@
             <ul class="usa-list margin-top-1">
             {% for link in data.links %}
               <li>
-                <a 
-                  class="usa-footer__secondary-link" 
+                <a
+                  class="usa-footer__secondary-link"
                   href="{% unless link.isExternal %}{{ site.baseurl }}{% endunless %}{{ link.href }}"
                 >
                   {{ link.text }}

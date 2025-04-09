@@ -198,4 +198,4 @@ version: 0.2
   </div>
 </form>
 <button type="submit" form="model-card-form" id="form-btn" class="usa-button">Create Model Card Markdown File</button>
-<script src="{{ site.baseurl }}/javascript/model-card-generator.js"></script>
+<script src="{{ '/javascript/model-card-generator.js' | relative_url }}"></script>
