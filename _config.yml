@@ -1,6 +1,5 @@
 title: AI Toolkit
-baseurl: ""
-url: ""
+url: "https://uscensusbureau.github.io"
 
 collections:
   resources:

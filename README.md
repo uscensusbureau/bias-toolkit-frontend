@@ -21,6 +21,8 @@ SASS files are kept in the `/_sass` directory. To watch for changes and recompil
 npm run watch
 ```
 
+Note that the USWDS assets are git-tracked to make builds for Github Pages easier. Otherwise custom build actions are needed to compile the USWDS styles before each deployment. Any future USWDS updates will need to recompile and commit any resulting changes.
+
 ## Analytics
 
 The file `_includes/head.html` contains script tags for the following analytics tools:

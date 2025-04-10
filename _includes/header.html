@@ -11,7 +11,7 @@
     <div class="usa-navbar">
       <div class="usa-logo" id="xd-logo">
         <em class="usa-logo__text">
-          <a href="{{ site.baseurl }}/" title="{{ site.title }}">
+          <a href="/" title="{{ site.title }}">
             {{ site.title }}
             <span class="site-version">Beta</span>
           </a>
@@ -22,7 +22,7 @@
 
     <nav aria-label="Primary navigation" class="usa-nav">
       <button class="usa-nav__close">
-        <img src="{{ site.baseurl }}/assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
+        <img src="{{ '/assets/uswds/img/usa-icons/close.svg' | relative_url }}" role="img" alt="Close" />
       </button>
       <ul class="usa-nav__primary usa-accordion">
         {% for section in data %}
@@ -40,7 +40,7 @@
               {% endif %}
             {% endfor %}
           {% endif %}
-          
+
           <li class="usa-nav__primary-item">
             {% if section.links %}
               {% assign section_id = "basic-nav-" | append: section.text | slugify %}
@@ -54,13 +54,13 @@
               <ul id="{{section_id}}" class="usa-nav__submenu">
                 {% for link in section.links %}
                   <li class="usa-nav__submenu-item">
-                    <a href="{{ site.baseurl }}{{ link.href }}">{{link.text}}</a>
+                    <a href="{{ link.href }}">{{link.text}}</a>
                   </li>
                 {% endfor %}
               </ul>
             {% else %}
               <li class="usa-nav__primary-item">
-                <a href="{{ site.baseurl }}{{ section.href }}" class="usa-nav__link {%if isCurrent%}usa-current{% endif %}">
+                <a href="{{ section.href }}" class="usa-nav__link {%if isCurrent%}usa-current{% endif %}">
                   <span>{{section.text}}</span>
                 </a>
               </li>
