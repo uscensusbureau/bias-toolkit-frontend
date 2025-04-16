@@ -20,7 +20,7 @@ hero:
 
 second-section:
   title: Get in Touch
-  subtitle: Do you have questions about using AI in the federal government? Do you have a case study that you’d like to highlight? Or feedback for how this toolkit might better meet your needs? We’d love to hear from you. Email us at [inquiries@xd.gov](mailto:inquiries@xd.gov).
+  subtitle: Do you have questions about using AI in the federal government? Do you have a case study that you’d like to highlight? Or feedback for how this toolkit might better serve your needs? We’d love to hear from you. Email us at [inquiries@xd.gov](mailto:inquiries@xd.gov).
   button:
     text: Email Us
     href: mailto:inquiries@xd.gov
