@@ -17,7 +17,7 @@ tags:
 <p>
   A model card is a documentation tool to increase transparency and share information with a wider audience by sharing information about a model’s intent, data, architecture, and performance. Model cards are intended for a technical and non-technical audience to gain insight on a machine learning, AI, or automation model at any phase in development.
 </p>
-<a class="usa-button" href="{{ site.baseurl }}/resources/model-card-generator/tool">
+<a class="usa-button" href="{{ '/resources/model-card-generator/tool' | relative_url }}">
   Create a Model Card
 </a>
 <p class="font-sans-2xs">
