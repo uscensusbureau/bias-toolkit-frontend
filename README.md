@@ -3,6 +3,13 @@ Jekyll site for displaying toolkits developed by [xd.gov](https://www.xd.gov/) t
 
 This site is based on [uswds-sandbox code](https://github.com/uswds/uswds-sandbox).
 
+## Status
+ **This repository has been archived and is no longer maintained.**
+ 
+ The code is provided for historical reference and may contain unpatched or unknown vulnerabilities.
+ 
+ It should not be used in production systems.
+
 ## Running code locally
 After cloning the repo, navigate to the correct folder and install USWDS, Jekyll, and any necessary dependencies using:
 ```
